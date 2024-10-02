@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-export default function () {
+const Mygithub = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
       <Head>
@@ -16,7 +16,8 @@ export default function () {
       <main className="flex flex-col items-center p-6">
         <section className="max-w-2xl bg-white rounded-lg shadow-lg p-6">
           <p className="text-gray-600 mt-4">
-            What I believe is quantity is greater than quality; that's why my GitHub has no great repositories. In the future, I am sure I will have great projects. Anyway, here's the link for my GitHub.
+            What I believe is quantity is greater than quality; that&rsquo;s why my GitHub has no great repositories. 
+            In the future, I am sure I will have great projects. Anyway, here&rsquo;s the link for my GitHub.
           </p>
           <div className="mt-4">
             <Link href="https://github.com/veerannagari-ajay" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
@@ -27,4 +28,7 @@ export default function () {
       </main>
     </div>
   );
-}
+};
+
+Mygithub.displayName = 'Mygithub';
+export default Mygithub;
